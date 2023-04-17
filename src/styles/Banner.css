@@ -1,0 +1,106 @@
+#banner {
+  height: 100vh;
+  scroll-snap-align: center;
+  padding: 0 8%;
+  color: #fff;
+}
+
+#header,
+#header-left,
+#header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header {
+  padding: 2% 0;
+}
+
+#logo,
+#search-icon,
+#contact-btn {
+  cursor: pointer;
+}
+
+#logo > h2 {
+  font-family: "Pacifico", cursive;
+  color: #b83434;
+}
+
+#header-left {
+  gap: 5rem;
+}
+
+#header-right {
+  gap: 1rem;
+}
+
+#nav-links > ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#nav-links > ul > li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+#nav-links > ul > li > a {
+  color: #fff;
+}
+
+#contact-btn {
+  padding: 0.7rem;
+}
+
+#contact-btn,
+.learnMore-btn {
+  color: #fff;
+  background: #5459a7;
+  border: none;
+  border-radius: 5px;
+}
+
+.learnMore-btn {
+  padding: 0.3rem;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  gap: 5rem;
+}
+
+#main-left {
+  flex: 2;
+}
+
+.bannerTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#main-right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  width: 80%;
+  object-fit: contain;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(30px);
+  }
+}
