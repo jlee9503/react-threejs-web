@@ -17,9 +17,9 @@ const Banner = () => {
               {PageInfo.map((data, idx) =>
                 data.navItems.map((item, num) => (
                   <li key={num}>
-                    <Link to={item.to} style={{ textDecoration: "none" }}>
+                    <a href={item.to} style={{ textDecoration: "none" }}>
                       {item.name}
-                    </Link>
+                    </a>
                   </li>
                 ))
               )}
@@ -42,7 +42,7 @@ const Banner = () => {
           {PageInfo.map((data) =>
             data.bannerInfo.map((info, idx) => (
               <div key={idx} className="bannerTxt">
-                <h1 style={{ fontSize: "3rem"}}>{info.title}</h1>
+                <h1 style={{ fontSize: "3rem" }}>{info.title}</h1>
                 <h3 style={{ color: "#7f2930" }}>---{info.subtitle}</h3>
                 <p>{info.desciption}</p>
                 <button

@@ -1,4 +1,30 @@
 #works {
   height: 100vh;
   scroll-snap-align: center;
+  padding: 0 8%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#work-left {
+  flex: 1;
+}
+
+#work-right {
+  flex: 1;
+}
+
+#workList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#workList > li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  font-size: 4.5rem;
 }
