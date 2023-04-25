@@ -1,11 +1,11 @@
 #about {
   height: 100vh;
   scroll-snap-align: center;
-  padding: 0 8%;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 8%;
 }
 
 #about-left {
@@ -14,4 +14,11 @@
 
 #about-right {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  #about {
+    scroll-snap-align: none;
+    padding: 0 5%;
+  }
 }

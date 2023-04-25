@@ -1,8 +1,7 @@
 import React from "react";
 import "../styles/Banner.css";
 import PageInfo from "../Data";
-import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const Banner = () => {
   return (
@@ -29,7 +28,7 @@ const Banner = () => {
 
         <div id="header-right">
           <div id="search-icon">
-            <FaSearch size={20} style={{ marginTop: "3px" }} />
+            {/* <FaSearch size={20} style={{ marginTop: "3px" }} /> */}
           </div>
           <div id="tool-btn">
             <button id="contact-btn">Get in touch</button>
