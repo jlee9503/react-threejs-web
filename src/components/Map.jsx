@@ -12,9 +12,6 @@ const MapChart = () => {
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        // rotate: [-10.0, -52.0, 0],
-        // center: [-5, -3],
-        // scale: 1100
         rotate: [90.0, -40.0, 0],
         center: [-5, -2],
         scale: 1000,
@@ -23,7 +20,7 @@ const MapChart = () => {
     >
       <Geographies
         geography="/features.json"
-        fill="#D6D6DA"
+        fill="#153b45"
         stroke="#FFFFFF"
         strokeWidth={0.5}
       >
@@ -34,16 +31,16 @@ const MapChart = () => {
         }
       </Geographies>
       <Annotation
-        subject={[-123.4, 40]}
+        subject={[-121, 38]}
         dx={100}
         dy={-30}
         connectorProps={{
-          stroke: "#FF5533",
-          strokeWidth: 3,
+          stroke: "#FFFFFF",
+          strokeWidth: 2,
           strokeLinecap: "round",
         }}
       >
-        <text x="5" textAnchor="start" fill="#F53">
+        <text x="5" textAnchor="start" fill="#FFFFFF">
           {"California"}
         </text>
       </Annotation>
@@ -52,13 +49,13 @@ const MapChart = () => {
         dx={-100}
         dy={-30}
         connectorProps={{
-          stroke: "#FF5533",
-          strokeWidth: 3,
+          stroke: "#FFFFFF",
+          strokeWidth: 2,
           strokeLinecap: "round",
         }}
       >
-        <text x="-5" textAnchor="end" fill="#F53">
-          {"New York"}
+        <text x="-5" textAnchor="end" fill="#FFFFFF">
+          {"Headquater at New York"}
         </text>
       </Annotation>
       <Annotation
@@ -66,12 +63,12 @@ const MapChart = () => {
         dx={70}
         dy={-30}
         connectorProps={{
-          stroke: "#FF5533",
-          strokeWidth: 3,
+          stroke: "#FFFFFF",
+          strokeWidth: 2,
           strokeLinecap: "round",
         }}
       >
-        <text x="5" textAnchor="start" fill="#F53">
+        <text x="5" textAnchor="start" fill="#FFFFFF">
           {"Florida"}
         </text>
       </Annotation>
