@@ -62,6 +62,7 @@
   background: #5459a7;
   border: none;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .learnMore-btn {
@@ -91,10 +92,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  height: 100%;
 }
 
 .banner-img {
-  width: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 800px;
+  height: 600px;
+  margin: auto;
   object-fit: contain;
   animation: animate 2s infinite ease alternate;
 }
